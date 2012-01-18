@@ -14,7 +14,7 @@ OSX_CFLAGS=-undefined dynamic_lookup
 CC=gcc
 # -fexceptions is necessary if your Lua was built with a C++ compiler and
 # uses exceptions internally; can be removed
-CFLAGS=-g -Wall $(INC) -shared -fPIC -fexceptions
+CFLAGS= -O3 -Wall $(INC) -shared -fPIC -fexceptions
 LDFLAGS=-shared -L$(LUALIB) $(OSX_CFLAGS)
 INC=-I$(LUAINC)
 
