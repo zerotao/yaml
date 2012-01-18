@@ -708,7 +708,7 @@ static int l_null(lua_State *L) {
    return 1;
 }
 
-LUALIB_API int luaopen_yaml(lua_State *L) {
+LUALIB_API int luaopen_lyaml(lua_State *L) {
    const luaL_reg yamllib[] = {
       { "load", l_load },
       { "dump", l_dump },
@@ -717,6 +717,6 @@ LUALIB_API int luaopen_yaml(lua_State *L) {
       { NULL, NULL}
    };
 
-   luaL_openlib(L, "yaml", yamllib, 0);
+   luaL_openlib(L, "lyaml", yamllib, 0);
    return 1;
 }
