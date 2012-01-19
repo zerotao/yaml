@@ -1,0 +1,15 @@
+--- This file is not part of LuaDist (at least not yet)
+
+name = "lyaml"
+version = "0.2.1"
+
+desc = "lyaml is a YAML (http://yaml.luaforge.net/) YAML parser based on the libyaml library."
+author = "Andrew Danforth"
+license = "MIT/X11"
+url = "http://yaml.luaforge.net/"
+maintainer = "Andrew Danforth"
+
+depends = {
+	"lua ~> 5.1",
+	"libyaml >= 0.1.3"
+}
